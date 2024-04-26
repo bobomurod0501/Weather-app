@@ -32,3 +32,6 @@ body {
   background: rgba(0, 0, 0, 0.5);
   top: 0;
 }
+.humidity{
+  font-size: 20px;
+}

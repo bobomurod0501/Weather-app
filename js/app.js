@@ -21,11 +21,13 @@ const updateUI = (weather) => {
     console.log(weather)
     if(Math.round(weather.main.temp_min) != Math.round(weather.main.temp_max)){
         details.innerHTML = `
-        <h5 class="mb-3">${weather.name}</h5>
+        <h5 class="mb-3">${weather.name}, ${weather.sys.country}</h5>
           <p class="mb-3">${weather.weather[0].main}</p>
           <div class="display-4 mb-3">
             <span>${Math.round(weather.main.temp_min)}-${Math.round(weather.main.temp_max)}</span>
             <span>&deg;C</span>
+            <p class="humidity">humidity:${weather.main.humidity}</p>
+            <p class="humidity">pressure:${weather.main.pressure}</p>
           </div>
     `
     }else{
@@ -35,6 +37,8 @@ const updateUI = (weather) => {
           <div class="display-4 mb-3">
             <span>${Math.round(weather.main.temp_min)}</span>
             <span>&deg;C</span>
+            <p class="humidity">humidity:${weather.main.humidity}</p>
+            <p class="humidity">pressure:${weather.main.pressure}</p>
           </div>
     `
     }
