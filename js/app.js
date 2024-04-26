@@ -18,7 +18,7 @@ const loader = (asd) => {
 changeLocation.city.focus()
 
 const updateUI = (weather) => {
-    console.log(weather)
+    console.log(weather.main.humidity)
     if(Math.round(weather.main.temp_min) != Math.round(weather.main.temp_max)){
         details.innerHTML = `
         <h5 class="mb-3">${weather.name}, ${weather.sys.country}</h5>
