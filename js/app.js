@@ -24,7 +24,7 @@ const updateUI = (weather) => {
         <h5 class="mb-3">${weather.name}</h5>
           <p class="mb-3">${weather.weather[0].main}</p>
           <div class="display-4 mb-3">
-            <span>${Math.round(weather.main.temp_min)} - ${Math.round(weather.main.temp_max)}</span>
+            <span>${Math.round(weather.main.temp_min)}-${Math.round(weather.main.temp_max)}</span>
             <span>&deg;C</span>
           </div>
     `
