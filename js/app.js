@@ -29,6 +29,7 @@ const updateUI = (weather) => {
             <p class="humidity">humidity:${weather.main.humidity}</p>
             <p class="humidity">pressure:${weather.main.pressure}</p>
           </div>
+          
     `
     }else{
         details.innerHTML = `
